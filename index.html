@@ -13,19 +13,23 @@
 
   <body>
     <main id="main">My ID is "main"!</main>
+    <script>
     const main = document.getElementById('main')
     main.addEventListener('click', function(event) {
       alert('I was clicked!')
     })
+    </script>
     <br />
 
     <div>
       <label>Input:</label><input />
+      <script>
       const input = document.querySelector('input')
        
       input.addEventListener('keydown', function(e) {
         console.log(e.which)
       })
+      </script>
     </div>
 
     <br />
