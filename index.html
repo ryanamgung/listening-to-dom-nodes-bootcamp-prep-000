@@ -54,6 +54,8 @@
               }
                
               for (let i = 0; i < divs.length; i++) {
+                // stop! that! propagation!
+                e.stopPropagation()
                 divs[i].addEventListener('click', bubble)
               }
 
